@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Gotu);
+
+html, body {
+    font-family: Gotu;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+.search-container {
+    position: absolute;
+    z-index: 100;
+    top: 180px;
+    left: 100px;
+    width: 400px;
+    height: 60px;
+    background-color: #FFF;
+    border-radius: 30px;
+    display: flex;
+    opacity: .85;
+}
+
+.search-container .search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.search-container input {
+    width: 100%;
+    font-size: 25px;  
+    border: none;
+    color: #454E53;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+    -webkit-text-fill-color: #333;
+} 
+
+input#zip-code-input {
+    display: block;
+    background-color: #fff;
+    opacity: .85;
+}
+
+
+#search-icon {
+    display: block;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    width: 365px;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search i {
+    font-size: 25px;
+    color: #454E53;
+}
+
+.stores-list-container {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    top: 270px;
+    left: 100px;
+    width: 400px;
+    /* height: 450px; */
+    border-radius: 30px;
+    bottom: 20px;
+    margin-bottom: 30px;
+    overflow-y: hidden;
+    display: flex;
+    opacity: .85;
+}
+
+.stores-list {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.store-address {
+    margin: 10px 25px 10px 0px;
+    font-size: 18px;
+}
+.store-name {
+    margin: 10px 25px 10px 0px;
+    font-size: 20px;
+}
+
+.store-address span, .store-name span {
+    display:block;
+}
+
+.store-phone-number {
+    color: #666;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.store-number {
+    width: 30px;
+    height: 30px;
+    background-color: #454E53;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-container {
+    border-bottom: 1px solid #979797;
+    display: flex;
+    cursor: pointer;
+    opacity: .85;
+    
+}
+.store-container-background {
+    display: flex;
+    flex-grow: 1;
+    border-radius: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.store-container-background:hover {   
+    background-color: #ccc;
+}
+
+.store-info-container {
+    flex-grow: 1;
+}
+
+.store-number-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    position: absolute;
+    z-index: 100;
+    font-size:40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    top: 100px;
+    left: 100px;
+}
+
+/*
+.info-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.info-open-status {
+    margin-bottom: 5px;
+}
+
+
+.info-box {
+    font-family: Gotu;
+    border-bottom: 1px solid #979797;
+    margin-bottom: 5px;
+}
+
+.info-address-phone {
+    font-family: Gotu;
+    margin-top: 5px;
+}
+.info-phone, .info-address {
+    margin-left: -1px;
+}
+.info-address {
+    margin-bottom: 5px;
+}
+.phone-icon {
+    font-size: 8px;
+}
+
+.phone-circle {
+    color: #1984a1;
+}
+.info-phone-icon {
+    background-color: #1984a1;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding: 1px 1px 1px 2px;
+    font-size: 10px;
+    display: flex;
+    
+}
+*/
+
+.store-info-name {
+    font-family: Gotu;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,.87);
+}
+
+.store-info-status {
+    font-family: Gotu;
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+}
+
+.store-info-address, .store-info-phone {
+    font-family: Gotu;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.store-info-address .circle, .store-info-phone .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #1985A1;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 8px;
+}
+
+.search i {
+    cursor: pointer;
+}
+
